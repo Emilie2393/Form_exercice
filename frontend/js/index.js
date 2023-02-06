@@ -64,7 +64,7 @@ function passCheck(pass){
     console.log(valid)
 }
 
-// contrôle de l'email //
+// contrôle de l'email avec une RegExp //
 
 const mailControl = document.querySelectorAll("#mail")
 console.log(mailControl)
