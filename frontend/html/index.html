@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>Exercice API_REST</title>
+    
 </head>
 <body>
-    <h1>Une API REST coté client : indentification</h1>
-    <form method="get" class="login">
+    <h1>Formulaire d'inscription et d'identification</h1>
+    <p>conçu via HTML, CSS et Javascript</p>
+    <div class="container">
+      <div class="buttons">
+        <button class="buttons__connection">Se connecter</button>
+        <button class="buttons__subscribe">S'inscrire</button> 
+      </div>
+    <form method="get" class="login" data-id="connection">
         <div class="login__mail">
-          <label for="login__mail__adress">Email: </label>
-          <input type="text" name="mail" id="mail" required>
-          <p id="login__mail__error"><!-- ci est un message d'erreur --></p>
+          <input type="email" name="mail" id="mail" required placeholder="entrez votre e-mail">
+          <small></small>
         </div>
         <div class="login__password">
-          <label for="login__password__label">Mot de passe: </label>
-          <input type="text" name="password" id="password" required>
-          <p id="login__password__error"></p>
+          <input type="password" name="password" id="password" required placeholder="entrez votre mot de passe">
+          <small></small>
+        </div>
+        <div class="login__submit">
+          <button type="submit" value="Connexion" id="connect">Connexion</button>
         </div>
     </form>
-    
-    
+
+    <form method="get" class="subscribe hidden" data-id="subscribe">
+      <div class="subscribe__mail">
+        <input type="email" name="mail" id="mail" placeholder="entrez votre e-mail" required>
+        <small></small>
+      </div>
+      <div class="subscribe__password">
+        <input type="password" name="password" id="password" required placeholder="entrez votre mot de passe">
+        <small></small>
+      </div>
+      <div class="subscribe__submit">
+        <button type="submit" value="Inscription" id="subscribe">Inscription</button>
+      </div>
+  </form>
+
+  
+  </div>
+  <script src="../js/index.js"></script>
 </body>
 </html>
