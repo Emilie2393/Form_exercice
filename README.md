@@ -1,4 +1,4 @@
-# Un formulaire d'inscription et connection
+# Un formulaire d'inscription et connexion
 
 clone ce repository <br>
 ouvre le dossier HTML <br>
